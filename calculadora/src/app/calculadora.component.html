@@ -1,0 +1,47 @@
+<div class="container">
+<h2>Calculadora</h2>
+
+<form>
+    <div class="form-group">
+
+        <label>Numero 1</label>
+        <input
+        type="number"
+        class="form-control"
+        placeholder="Escriba el primer numero" 
+        [{ngModel}]- "numero1"
+        name="numero1"
+        />
+    </div>
+   
+    <div class="form-group">
+
+        <label>Numero 2</label>
+        <input
+        type="number"
+        class="form-control"
+        placeholder="Escriba el segundo numero" 
+        [{ngModel}]- "numero2"
+        name="numero2"
+        />
+    </div>
+
+  <button type="submit" class="btn btn-primary" (click)="sumar()">Sumar</button>
+  <button type="submit" class="btn btn-primary" (click)="restar()">Restar</button>
+  <button type="submit" class="btn btn-primary" (click)="multiplicar()">Multiplicar</button>
+  <button type="submit" class="btn btn-primary" (click)="dividir()">Dividir</button>
+
+</form>
+
+<p>Resultado {{resultado}}</p>
+
+<!-- Footer -->
+<footer>
+    Diana Marcela Casanova<br>
+    Isleny Marin M.
+    Tecnologia en Desarrollo de Software
+    Sexto semestre. 
+  </footer>
+
+
+</div>
